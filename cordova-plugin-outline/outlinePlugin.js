@@ -67,13 +67,13 @@ class OutlinePluginError {
   }
 }
 
-const ConnectionStatus = {
+const TunnelStatus = {
   CONNECTED: 0,
   DISCONNECTED: 1,
   RECONNECTING: 2
 }
 
-class Connection {
+class Tunnel {
   constructor(config, id) {
     if (id) {
       this.id_ = id.toString();
@@ -125,8 +125,8 @@ class Connection {
 }
 
 module.exports = {
-  Connection,
-  ConnectionStatus,
+  Tunnel,
+  TunnelStatus,
   log: Log,
   quitApplication,
 };
